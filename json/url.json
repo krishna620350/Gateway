@@ -1,5 +1,8 @@
 {
     "local": "http://localhost:",
+    "deployment": {
+        "school": "https://erp-school.onrender.com:"
+    },
     "port":{
         "school": 8001,
         "teacher": 8002,

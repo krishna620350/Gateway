@@ -9,9 +9,8 @@ app.use(cors());
 app.use(urlPathandSecurity.contentSecurity);
 app.use(urlPathandSecurity.typeSecurityGroup);
 
-
 const proxies = [
-  { path: "/school",  target: `${urlPathandSecurity.path}${urlPathandSecurity.port.school}`, name:"school"},
+  { path: "/school",  target: `${urlPathandSecurity.deployePath.school}${urlPathandSecurity.port.school}`, name:"school"},
   { path: "/teacher", target: `${urlPathandSecurity.path}${urlPathandSecurity.port.teacher}`, name:"teacher"},
   { path: "/student", target: `${urlPathandSecurity.path}${urlPathandSecurity.port.student}`, name:"student"},
 ];
