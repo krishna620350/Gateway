@@ -6,7 +6,7 @@ const MAX_LOG_LINES = 100;
 class logFileCreate {
     constructor() {
         this.lineCount = 0;
-        this.logFile = fs.createWriteStream("D:/software/vscode/node/ERP_management/Server/gateway/logs/database_log1.log", { flags: "a" });
+        this.logFile = fs.createWriteStream("./logs/database_log1.log", { flags: "a" });
         this.log = console.log;
     }
 
